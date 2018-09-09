@@ -6,12 +6,12 @@ def line(katz_deli)
     katz_deli.each_with_index do |person,index|
       current_line += " #{index + 1}. #{person}"
     end
+    puts current_line
   end
-  puts current_line
 end
 
 def take_a_number(katz_deli, name)
-  
+  katz_deli.push(name)
 end
 
 def now_serving
